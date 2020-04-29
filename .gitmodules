@@ -1,3 +1,3 @@
 [submodule "picl-k3os-image-generator"]
 	path = picl-k3os-image-generator
-	url = git@github.com:sgielen/picl-k3os-image-generator.git
+	url = git@github.com:nazarewk/picl-k3os-image-generator.git

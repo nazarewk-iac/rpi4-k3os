@@ -1,0 +1,9 @@
+*
+!/bin
+!/picl-k3os-image-generator
+!/config
+!.gitignore
+!.gitmodules
+!k3os-raspi.json
+!Makefile
+!README.md

@@ -1,0 +1,8 @@
+#cloud-config
+merge_how: "list(append)+dict(recurse_array)+str()"
+
+k3os:
+  k3s_args:
+  - agent
+  labels:
+    "node-role.kubernetes.io/worker": "true"

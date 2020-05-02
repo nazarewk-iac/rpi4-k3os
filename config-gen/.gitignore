@@ -1,0 +1,7 @@
+*
+!.gitignore
+!*.tf
+!.terraform-version
+!cloud-configs
+cloud-configs/*
+!cloud-configs/*.yaml

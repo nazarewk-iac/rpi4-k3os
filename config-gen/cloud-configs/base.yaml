@@ -1,0 +1,11 @@
+#cloud-config
+merge_how: "list(append)+dict(recurse_array)+str()"
+
+k3os:
+  # ntp servers seems to be required to initialize properly
+  ntp_servers:
+  - 0.europe.pool.ntp.org
+  - 1.europe.pool.ntp.org
+  sysctl:
+    kernel.printk: 4 4 1 7
+    kernel.kptr_restrict: "1"

@@ -25,3 +25,8 @@ Why not using picl-k3os-image-generator? This is faster for changing configs.
 
 
     bin/get-kubeconfig "<hostname>" ~/.kube/config
+
+6. Install MetalLB (see https://blog.quickbird.uk/domesticating-kubernetes-d49c178ebc41 ):
+
+
+    bin/install-metallb "192.168.0.32-192.168.0.63"

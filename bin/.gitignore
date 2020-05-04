@@ -1,2 +1,4 @@
-packer
-packer-builder-arm
+*
+!.gitignore
+!img
+!get-kubeconfig

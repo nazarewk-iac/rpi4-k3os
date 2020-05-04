@@ -1,0 +1,26 @@
+# call it by lowercase MAC address, eg. aa:bb:cc:dd:ee:ff.yaml
+ssh_authorized_keys:
+# github downloads don't work, prevent k3s-service from starting
+- 'ssh-rsa AAAAB3N...LYp0ct/ key-name'
+hostname: k3os-example-0
+
+k3os:
+  token: example-abcdef1234567890
+  server_url: https://192.168.0.2:6443
+  # # Use this for agent
+  # k3s_args:
+  # - agent
+  # # Use this for server
+  # k3s_args:
+  # - server
+  # - --disable=servicelb
+  # - --disable=local-storage
+  ntp_servers:
+  - 0.europe.pool.ntp.org
+  - 1.europe.pool.ntp.org
+  sysctl:
+    kernel.printk: 4 4 1 7
+    kernel.kptr_restrict: "1"
+  labels:
+    # # Can be /worker
+    # "node-role.kubernetes.io/example-role": "true"

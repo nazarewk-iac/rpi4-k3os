@@ -2,4 +2,3 @@
 !.gitignore
 !img
 !get-kubeconfig
-!install-metallb
